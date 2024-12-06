@@ -1,0 +1,230 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ddd4d4;
+   line-height: 2.3;
+}
+
+/* Header styling */
+header {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: rgb(236, 228, 228);
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration:underline;
+}
+
+/* Hero section styling */
+/* Hero Section */
+.hero {
+    background-image: url('img/home-appliance.webp'); /* Hero background image */
+    background-size: cover; /* Cover entire hero section */
+    background-position: center;
+    width: 100vw;
+    height: 61vh; /* Full viewport height */
+    background-repeat: no-repeat;
+    color: #0e0101;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start; /* Center content vertically */
+    align-items:flex-end;/*  Center content horizontally */
+}
+
+/* Remove spacing above and below */
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+    color: #140101; /* Ensure text stands out on background */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Text shadow for readability */
+}
+.hero h2{    
+    margin-bottom: 10px;
+    color: #140101; /* Ensure text stands out on background */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding-right: 80px;
+}
+.hero p {
+    font-size: 18px;
+    color: #080808; /* Ensure text stands out on background */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+    margin-top: 10px;
+    padding-right: 30px;
+}
+.button-container {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Button on the left, empty space on the right */
+    align-items: center; 
+    padding-right: 20%;/* Vertically center items if necessary */
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 50px;
+    text-decoration:solid;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    justify-self: start; /* Align button to the left within the grid */
+}
+
+.button:hover {
+    background-color: #1e63a3;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    width: 900px;
+    max-width: 100px;
+}
+
+.container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between grid items */
+    max-width: 1200px; /* Set a max-width for the container */
+    margin: 20px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+}
+.appliance {
+    background-color: white;
+    border-radius: 3px;
+    padding-right: 2px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+}
+
+.appliance:hover {
+    transform: scale(1.01); /* Scale up slightly on hover */
+}
+
+.appliance img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.appliance h3 {
+    margin: 10px 0;
+    font-size: 20px; /* Larger font size for headings */
+}
+
+.appliance p {
+    font-size: 14px;
+}
+/* Section Styling */
+section {
+    max-width: 1500px;
+    margin: 12px auto;
+    padding: 100px;
+    background-color:transparent;
+    border-radius: 8px;
+    text-align: center;
+}
+
+section p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+section button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 40px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+section button:hover {
+    background-color: #1e63a3;
+    transform: translateY(-2px);
+}
+
+/* Footer styling */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Appliance section styling */
+#audio-guide, .video-guide, .contact-info{
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#appliances {
+    padding: 10px;
+    text-align: center;
+}
+
+/* About section styling */
+#about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+#about p, #about h3, #about h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    line-height: 1.5;
+}
+
+#about h3, #about h4 {
+    margin-top: 20px;
+    font-weight: bold;
+}
